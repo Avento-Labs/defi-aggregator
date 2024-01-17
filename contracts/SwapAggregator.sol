@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract SwappingAggregator {
+contract SwapAggregator {
     // Event to log the execution of calls
     event ExecutedCall(address indexed target, bytes data);
 
@@ -14,7 +14,6 @@ contract SwappingAggregator {
     /**
      * @dev Executes a batch of calls.
      * @param calls An array of 'Call' structs containing target addresses and call data.
-     * Note: In a real-world scenario, further validation is required to ensure security.
      * This function can be potentially risky as it can execute any arbitrary call data.
      */
     function execute(Call[] memory calls) public {

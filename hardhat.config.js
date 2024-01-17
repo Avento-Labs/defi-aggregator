@@ -4,7 +4,6 @@ require('@nomiclabs/hardhat-waffle');
 module.exports = {
   networks: {
     hardhat: {
-      seeds: [process.env.MNEMONIC],
       gas: 2100000,
       forking: {
         url: process.env.MAINNET_RPC_URL,
